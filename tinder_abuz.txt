@@ -1,4 +1,35 @@
-async function demo() {
+async function mess() 
+    { 
+        a = document.getElementsByClassName("Whs(nw) Pt(4px) Pb(12px) Px(8px) W(100%) Trsp(a)! Trsdu($normal) Pos(a) Ovy(s) Ovs(touch) Ovx(h) Ovsby(n) NetHeight(100%,50px)")
+        const sleep = ms => new Promise(r => setTimeout(r, ms));
+        await sleep(100);
+        var counter = 0;
+        for (i=0; i < a[0].childElementCount; i++) 
+            {
+                
+                for (j=0; j < a[0].children[i].childElementCount; j++){
+                    if (counter > 1) {
+                        a[0].children[i].children[j].children[0].click()
+                        document.getElementById("q2007191109").innerHTML  = "Привет! Чем занимаешься? Нет желания прогуляться сегодня вечером?"
+                        await sleep(200);
+                        document.getElementsByClassName("emoji-picker__emoji")[4].click()
+                        document.getElementsByClassName("Pos(r) Z(1)")[1].click()
+                        await sleep(1000);
+                        document.getElementsByClassName("focus-button-style Cur(p) Fw($bold) D(f) Fxd(r) Px(8px)")
+                        await sleep(500);
+                        
+                    }
+                    await sleep(500);
+                    console.log(counter)
+                    counter += 1;
+                }
+            } 
+    
+    }
+
+
+
+    async function demo() {
 
     like = document.getElementsByClassName('button Lts($ls-s) Z(0) CenterAlign Mx(a) Cur(p) Tt(u) Bdrs(50%) P(0) Fw($semibold) focus-button-style Bxsh($bxsh-btn) Expand Trstf(e) Trsdu($normal) Wc($transform) Pe(a) Scale(1.1):h Scale(.9):a Bgc($c-like-green):a')[0];
 
@@ -7,7 +38,7 @@ async function demo() {
     await sleep(100);
 
     for (let i = 0; i < 100000; i++) {
-    	like.click()
+        like.click()
         await sleep(200);
     }
 }
